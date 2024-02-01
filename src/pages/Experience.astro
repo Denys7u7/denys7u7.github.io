@@ -1,0 +1,342 @@
+---
+import BackgroundAnimated from "../components/BackgroundAnimated.astro";
+import Header from "../components/Header.astro";
+import Project from "../components/Project.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <Header active="Experience" />
+  <BackgroundAnimated />
+  <div class="container h-full overflow-y-scroll">
+    <section class="timeline w-[50vw] mx-auto my-5">
+      <h1 class="mb-5 text-4xl">Te comparto mi experiencia</h1>
+      <hr class="border-[--white] mb-5" />
+      <!--first-->
+      <div class="event">
+        <div
+          class="event_icon text-white self-center rounded-full relative p-5 mx-8"
+        >
+          <svg
+            class="block h-12 mx-auto"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M156.6 384.9L125.7 354c-8.5-8.5-11.5-20.8-7.7-32.2c3-8.9 7-20.5 11.8-33.8L24 288c-8.6 0-16.6-4.6-20.9-12.1s-4.2-16.7 .2-24.1l52.5-88.5c13-21.9 36.5-35.3 61.9-35.3l82.3 0c2.4-4 4.8-7.7 7.2-11.3C289.1-4.1 411.1-8.1 483.9 5.3c11.6 2.1 20.6 11.2 22.8 22.8c13.4 72.9 9.3 194.8-111.4 276.7c-3.5 2.4-7.3 4.8-11.3 7.2v82.3c0 25.4-13.4 49-35.3 61.9l-88.5 52.5c-7.4 4.4-16.6 4.5-24.1 .2s-12.1-12.2-12.1-20.9V380.8c-14.1 4.9-26.4 8.9-35.7 11.9c-11.2 3.6-23.4 .5-31.8-7.8zM384 168a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"
+            ></path></svg
+          >
+        </div>
+        <div
+          class="event_date text-2xl text-white font-semibold flex
+          items-center justify-center whitespace-nowrap px-5
+          rounded-s-md"
+        >
+          Mayo 2020
+        </div>
+        <div class="event_content p-5 rounded-e-md">
+          <div class="font-bold text-xl uppercase">BYTE</div>
+          <div class="event_description">
+            <p>
+              Participar activamente en el avance de sistemas back office
+              destinados a entidades bancarias, desempeñándose en labores
+              relacionadas tanto con el backend (utilizando Spring Boot) como
+              con el frontend (con enfoque en Angular), además de llevar a cabo
+              la gestión y administración de bases de datos Oracle.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--second-->
+
+      <div class="event">
+        <div
+          class="event_icon text-white self-center mx-8 rounded-full relative p-5"
+        >
+          <svg
+            class="block h-12 mx-auto"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              d="M224 508c-6.7 0-13.5-1.8-19.4-5.2l-61.7-36.5c-9.2-5.2-4.7-7-1.7-8 12.3-4.3 14.8-5.2 27.9-12.7 1.4-.8 3.2-.5 4.6 .4l47.4 28.1c1.7 1 4.1 1 5.7 0l184.7-106.6c1.7-1 2.8-3 2.8-5V149.3c0-2.1-1.1-4-2.9-5.1L226.8 37.7c-1.7-1-4-1-5.7 0L36.6 144.3c-1.8 1-2.9 3-2.9 5.1v213.1c0 2 1.1 4 2.9 4.9l50.6 29.2c27.5 13.7 44.3-2.4 44.3-18.7V167.5c0-3 2.4-5.3 5.4-5.3h23.4c2.9 0 5.4 2.3 5.4 5.3V378c0 36.6-20 57.6-54.7 57.6-10.7 0-19.1 0-42.5-11.6l-48.4-27.9C8.1 389.2 .7 376.3 .7 362.4V149.3c0-13.8 7.4-26.8 19.4-33.7L204.6 9c11.7-6.6 27.2-6.6 38.8 0l184.7 106.7c12 6.9 19.4 19.8 19.4 33.7v213.1c0 13.8-7.4 26.7-19.4 33.7L243.4 502.8c-5.9 3.4-12.6 5.2-19.4 5.2zm149.1-210.1c0-39.9-27-50.5-83.7-58-57.4-7.6-63.2-11.5-63.2-24.9 0-11.1 4.9-25.9 47.4-25.9 37.9 0 51.9 8.2 57.7 33.8 .5 2.4 2.7 4.2 5.2 4.2h24c1.5 0 2.9-.6 3.9-1.7s1.5-2.6 1.4-4.1c-3.7-44.1-33-64.6-92.2-64.6-52.7 0-84.1 22.2-84.1 59.5 0 40.4 31.3 51.6 81.8 56.6 60.5 5.9 65.2 14.8 65.2 26.7 0 20.6-16.6 29.4-55.5 29.4-48.9 0-59.6-12.3-63.2-36.6-.4-2.6-2.6-4.5-5.3-4.5h-23.9c-3 0-5.3 2.4-5.3 5.3 0 31.1 16.9 68.2 97.8 68.2 58.4-.1 92-23.2 92-63.4z"
+            ></path></svg
+          >
+        </div>
+        <div
+          class="event_date text-2xl text-white font-semibold flex items-center justify-center whitespace-nowrap px-5
+        rounded-s-md"
+        >
+          Septiembre 2022
+        </div>
+        <div class="event_content p-5 rounded-e-md">
+          <div class="font-bold text-xl uppercase">Infologic</div>
+          <div class="event_description">
+            <p>
+              Colaborar en el entrenamiento de desarrolladores para una entidad
+              gubernamental. La capacitación abarcó la instrucción tanto teórica
+              como práctica en los fundamentos de JavaScript, Node.js,
+              TypeScript y Angular, profundizando en aspectos esenciales de
+              estas tecnologías.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--third-->
+
+      <div class="event">
+        <div
+          class="event_icon text-white self-center mx-8 rounded-full relative p-5"
+        >
+          <svg
+            class="block h-12 mx-auto"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              d="M185.7 268.1h76.2l-38.1-91.6-38.1 91.6zM223.8 32L16 106.4l31.8 275.7 176 97.9 176-97.9 31.8-275.7zM354 373.8h-48.6l-26.2-65.4H168.6l-26.2 65.4H93.7L223.8 81.5z"
+            ></path></svg
+          >
+        </div>
+        <div
+          class="event_date text-2xl text-white font-semibold flex items-center justify-center whitespace-nowrap px-5
+        rounded-s-md"
+        >
+          Mayo 2022
+        </div>
+        <div class="event_content p-5 rounded-e-md">
+          <div class="font-bold text-xl uppercase">Novatech</div>
+          <div class="event_description">
+            <p>
+              Desarrollar código legible y escalable en Angular 13, acompañado
+              de pruebas unitarias (Karma y Jazmine) haciendo uso de buenas
+              practicas, de analizadores de código (ESLint), evaluadores del
+              mismo (Sonarqube), usando NGRX para el manejo de estados, entre
+              otras tecnologías
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-[50vw] mx-auto my-5">
+      <h1 class="mb-5 text-4xl">Te presento mis proyectos</h1>
+      <hr class="border-[--white] mb-5" />
+
+      <div class="projects grid grid-cols-3 gap-5">
+        <Project
+          title="PokeApp"
+          description="PokeApp representa una plataforma sofisticada donde los usuarios tienen la capacidad de seleccionar cuidadosamente tres Pokémon para conformar su equipo. Antes de esta elección, se requiere la configuración detallada del perfil del usuario. La aplicación está equipada con un buscador de Pokémon que utiliza un mecanismo de renderizado eficiente con scroll virtual. Además, ofrece una interfaz de visualización elegante mediante un componente de swiper, permitiendo a los usuarios observar de manera intuitiva y eficaz a sus tres Pokémon seleccionados."
+          technologies={[
+            "JavaScript",
+            "TypeScript",
+            "Angular 14",
+            "Swiper",
+            "RxJS",
+            "Angular Material",
+            "NGRX",
+          ]}
+          source_code="https://github.com/Denys7u7/pokeapi"
+          img="/src/images/pokeapi.jpg"
+        />
+
+        <Project
+          title="YouApp"
+          description="Desarrollamos una aplicación dedicada a la reproducción y carga de archivos musicales. El frontend se construyó utilizando React Native, mientras que el backend se implementó mediante Spring Boot. Como sistema de control de versiones, empleamos GitHub para gestionar el código fuente."
+          technologies={[
+            "JavaScript",
+            "TypeScript",
+            "React Native",
+            "JAVA",
+            "Spring Boot",
+            "Docker",
+            "MinIO",
+          ]}
+          source_code="https://github.com/AlejandroA714/YouApp-Mobile"
+          img="/src/images/youapp.jpg"
+        />
+
+        <Project
+          title="Shooping Cart"
+          description="Sistema de carrito de compras con funcionalidades avanzadas, incluyendo un motor de búsqueda integrado y un componente de cálculo del monto total. Las tecnologías empleadas en este desarrollo incluyen Angular como framework principal, Firebase como plataforma de backend, y diversas bibliotecas como RxJS, NgRx, Angular Material, entre otras, para mejorar la eficiencia y la gestión de estado en la aplicación."
+          technologies={[
+            "JavaScript",
+            "TypeScript",
+            "Angular 14",
+            "Firebase",
+            "NGRX",
+            "RxJS",
+            "Angular Material",
+          ]}
+          source_code="https://github.com/Denys7u7/shopping-cart"
+          img="/src/images/cart.jpg"
+        />
+      </div>
+    </section>
+  </div>
+</Layout>
+
+<style>
+  .event .event_icon {
+    background-color: var(--complementary);
+  }
+
+  .event .event_icon svg {
+    fill: #1d2835;
+    transition: all 0.3s;
+  }
+
+  /* .event:hover .event_icon svg {
+    transform: rotate(360deg);
+  } */
+
+  .event .event_date,
+  .event .event_content {
+    border: 1px solid transparent;
+    transition: all 0.3s;
+  }
+
+  .event .event_content {
+    background-color: #1a212b;
+  }
+
+  .event .event_content div:first-child {
+    color: var(--complementary);
+  }
+
+  .event .event_date {
+    background-color: #11161c;
+  }
+
+  .event:hover .event_date,
+  .event:hover .event_content {
+    border: 1px solid var(--complementary);
+  }
+
+  /*   div.container::-webkit-scrollbar {
+    width: 10px;
+    background-color: #3c3949;
+  }
+
+  div.container::-webkit-scrollbar-thumb {
+    background-color: #f27283;
+  } */
+
+  div.container {
+    scrollbar-width: thin;
+    scrollbar-color: var(--complementary) var(--bg-body);
+  }
+
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    position: relative;
+  }
+  .event {
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    margin: 20px 0;
+    border-radius: 6px;
+    align-self: center;
+    width: 50vw;
+  }
+  .event:nth-child(2n + 1) {
+    flex-direction: row-reverse;
+  }
+
+  .event:nth-child(2n + 1) .event_date {
+    border-radius: 0 6px 6px 0;
+  }
+  .event:nth-child(2n + 1) .event_content {
+    border-radius: 6px 0 0 6px;
+  }
+  .event:nth-child(2n + 1) .event_icon:before {
+    content: "";
+    width: 2px;
+    height: 100%;
+    background: var(--complementary);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    z-index: -1;
+  }
+  .event:nth-child(2n + 1) .event_icon:after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: var(--complementary);
+    position: absolute;
+    left: auto;
+    right: 100%;
+    top: 50%;
+    z-index: -1;
+  }
+
+  .event_icon:before {
+    content: "";
+    width: 2px;
+    height: 100%;
+    background-color: var(--complementary);
+    position: absolute;
+    top: 100%;
+    z-index: -1;
+    left: 50%;
+  }
+  .event_icon:after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: var(--complementary);
+    position: absolute;
+    left: 100%;
+    z-index: -1;
+    top: 50%;
+  }
+
+  .event_description {
+    flex-basis: 100%;
+  }
+
+  .event:last-child .event_icon:before {
+    content: none;
+  }
+  @media (max-width: 786px) {
+    .event {
+      flex-direction: column;
+      align-self: center;
+    }
+    .event_content {
+      width: 100%;
+    }
+    .event_icon {
+      border-radius: 6px 6px 0 0;
+      width: 100%;
+      margin: 0;
+      box-shadow: none;
+    }
+    .event_icon:before,
+    .event_icon:after {
+      display: none;
+    }
+    .event_date {
+      border-radius: 0;
+      padding: 20px;
+    }
+    .event:nth-child(2n + 1) {
+      flex-direction: column;
+      align-self: center;
+    }
+    .event:nth-child(2n + 1) .event_date {
+      border-radius: 0;
+      padding: 20px;
+    }
+    .event:nth-child(2n + 1) .event_icon {
+      border-radius: 6px 6px 0 0;
+      margin: 0;
+    }
+  }
+</style>
