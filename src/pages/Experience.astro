@@ -5,11 +5,11 @@ import Project from "../components/Project.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Experiencia">
   <Header active="Experience" />
   <BackgroundAnimated />
   <div class="container h-full overflow-y-scroll">
-    <section class="timeline w-[50vw] mx-auto my-5">
+    <section class="timeline w-[95%] lg:w-[50vw] mx-auto my-5">
       <h1 class="mb-5 text-4xl">Te comparto mi experiencia</h1>
       <hr class="border-[--white] mb-5" />
       <!--first-->
@@ -139,7 +139,7 @@ import Layout from "../layouts/Layout.astro";
             "NGRX",
           ]}
           source_code="https://github.com/Denys7u7/pokeapi"
-          img="/src/images/pokeapi.jpg"
+          img="../images/pokeapi.jpg"
         />
 
         <Project
@@ -155,7 +155,7 @@ import Layout from "../layouts/Layout.astro";
             "MinIO",
           ]}
           source_code="https://github.com/AlejandroA714/YouApp-Mobile"
-          img="/src/images/youapp.jpg"
+          img="../images/youapp.jpg"
         />
 
         <Project
@@ -171,7 +171,7 @@ import Layout from "../layouts/Layout.astro";
             "Angular Material",
           ]}
           source_code="https://github.com/Denys7u7/shopping-cart"
-          img="/src/images/cart.jpg"
+          img="../images/cart.jpg"
         />
       </div>
     </section>
@@ -242,7 +242,6 @@ import Layout from "../layouts/Layout.astro";
     margin: 20px 0;
     border-radius: 6px;
     align-self: center;
-    width: 50vw;
   }
   .event:nth-child(2n + 1) {
     flex-direction: row-reverse;
