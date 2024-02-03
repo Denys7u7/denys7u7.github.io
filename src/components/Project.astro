@@ -11,7 +11,14 @@ const { title, description, technologies, source_code, img } = Astro.props;
 ---
 
 <div class="project relative rounded-md overflow-hidden">
-  <img class="w-full h-auto opacity-80" src={img} alt="" />
+  <img
+    class="w-full h-auto opacity-80"
+    src="{img}"
+    width="1600"
+    height="900"
+    decoding="async"
+    loading="lazy"
+  />
 
   <div
     class="project_content absolute top-[80%] h-full
