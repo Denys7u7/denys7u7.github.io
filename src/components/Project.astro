@@ -10,10 +10,10 @@ interface Props {
 const { title, description, technologies, source_code, img } = Astro.props;
 ---
 
-<div class="project relative rounded-md overflow-hidden">
+<div class="project relative rounded-md overflow-hidden my-5 md:my-0">
   <img
     class="w-full h-auto opacity-80"
-    src="{img}"
+    src={img}
     width="1600"
     height="900"
     decoding="async"

@@ -4,6 +4,8 @@ import Header from "../components/Header.astro";
 import Project from "../components/Project.astro";
 import Layout from "../layouts/Layout.astro";
 import pokeImage from "../images/pokeapi.jpg";
+import youappImage from "../images/youapp.jpg";
+import cartImage from "../images/cart.jpg";
 ---
 
 <Layout title="Experiencia">
@@ -126,7 +128,9 @@ import pokeImage from "../images/pokeapi.jpg";
       <h1 class="mb-5 text-4xl">Te presento mis proyectos</h1>
       <hr class="border-[--white] mb-5" />
 
-      <div class="projects grid grid-cols-1 gap-5">
+      <div
+        class="projects grid grid-cols-1 md:grid-cols-2 md:gap-5 lg:grid-cols-3"
+      >
         <Project
           title="PokeApp"
           description="PokeApp representa una plataforma sofisticada donde los usuarios tienen la capacidad de seleccionar cuidadosamente tres Pokémon para conformar su equipo. Antes de esta elección, se requiere la configuración detallada del perfil del usuario. La aplicación está equipada con un buscador de Pokémon que utiliza un mecanismo de renderizado eficiente con scroll virtual. Además, ofrece una interfaz de visualización elegante mediante un componente de swiper, permitiendo a los usuarios observar de manera intuitiva y eficaz a sus tres Pokémon seleccionados."
@@ -156,7 +160,7 @@ import pokeImage from "../images/pokeapi.jpg";
             "MinIO",
           ]}
           source_code="https://github.com/AlejandroA714/YouApp-Mobile"
-          img="/../src/images/youapp.jpg"
+          img={youappImage.src}
         />
 
         <Project
@@ -172,7 +176,7 @@ import pokeImage from "../images/pokeapi.jpg";
             "Angular Material",
           ]}
           source_code="https://github.com/Denys7u7/shopping-cart"
-          img="/../src/images/cart.jpg"
+          img={cartImage.src}
         />
       </div>
     </section>
